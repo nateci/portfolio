@@ -5,6 +5,12 @@ import path from "node:path";
 // hydration/bootstrap scripts in a static (nonce-less) deployment, and
 // 'wasm-unsafe-eval' is required to instantiate the kepler-wasm module.
 // Everything else is locked to same-origin.
+//
+// 'unsafe-eval' is added ONLY in development: React's dev build uses eval()
+// for debugging features. Production React never calls eval(), so prod stays
+// strict (no 'unsafe-eval').
+const isDev = process.env.NODE_ENV !== "production";
+
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -14,7 +20,7 @@ const csp = [
   "img-src 'self' data:",
   "font-src 'self'",
   "style-src 'self' 'unsafe-inline'",
-  "script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'",
+  `script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'${isDev ? " 'unsafe-eval'" : ""}`,
   "connect-src 'self'",
   "upgrade-insecure-requests",
   // report violations to /api/csp-report (modern report-to + legacy report-uri)
