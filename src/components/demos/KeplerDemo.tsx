@@ -97,8 +97,9 @@ export function KeplerDemo() {
 
         <p className="text-[0.68rem] leading-relaxed text-ink-faint">
           Real <span className="text-accent">kepler-raft</span> compiled to WebAssembly, running in
-          your browser, not a simulation. <span className="text-ink-dim">Write a key</span> to append
-          to the leader&apos;s log; <span className="text-ink-dim">kill the leader</span> to watch a
+          your browser, not a simulation. <span className="text-ink-dim">Write a key</span>{" "}
+          to append to the leader&apos;s log; <span className="text-ink-dim">kill the leader</span> to
+          watch a
           genuine re-election.
         </p>
       </div>
