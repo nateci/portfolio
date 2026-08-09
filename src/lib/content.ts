@@ -94,9 +94,11 @@ export const experience: Experience[] = [
     role: "Software Engineering Co-op",
     period: "Jul 2026 - Dec 2026",
     location: "Boston, MA",
-    incoming: true,
+    current: true,
     points: [
-      "Incoming co-op on the Supply Chain team, building logistics systems that move products from suppliers to warehouses to customers across international transportation and delivery networks.",
+      "Own front-of-house retail device stack on the Physical Retail Sales & Checkout Tech team: e-labels, mobile, and customer/associate-facing POS systems.",
+      "Migrating e-labels to a new supplier via a supplier-agnostic API that pushes label updates to any brand.",
+      "Building new customer checkout flows and hardening authentication flows on the associate-facing POS.",
     ],
   },
   {
@@ -106,7 +108,7 @@ export const experience: Experience[] = [
     location: "Boston, MA",
     current: true,
     points: [
-      "Integrated UpToDate Expert AI into CME accrual/redemption microservices, expanding GenAI clinical decision support to 100K+ clinicians.",
+      "Integrated UpToDate Expert AI into CME accrual/redemption microservices, expanding GenAI clinical decision support to 250K+ clinicians.",
       "Built a Java Spring microservice for CME credit issuance inside Expert AI's clinician-facing workflow.",
       "Overhauled Relay JMS broker serialization with json-io across 20+ microservices, eliminating timeouts at scale.",
       "Strengthened Expert AI search and filtering logic, improving clinical query performance and relevance.",
@@ -156,11 +158,15 @@ export const skills: { group: string; items: string[] }[] = [
   },
   {
     group: "Infrastructure",
-    items: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins", "Groovy", "Linux"],
+    items: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins", "Buildkite", "Groovy", "Linux"],
   },
   {
     group: "Frameworks & Data",
     items: ["React", "Next.js", "Node.js", "Express", "PyTorch", "TensorFlow", "PostgreSQL", "Pandas"],
+  },
+  {
+    group: "AI / Agentic Tooling",
+    items: ["Devin", "Cursor", "Claude Code", "Claude Cowork", "GitHub Copilot", "CodeRabbit"],
   },
 ];
 
