@@ -96,9 +96,9 @@ export const experience: Experience[] = [
     location: "Boston, MA",
     current: true,
     points: [
-      "Own front-of-house retail device stack on the Physical Retail Sales & Checkout Tech team: e-labels, mobile, and customer/associate-facing POS systems.",
-      "Migrating e-labels to a new supplier via a supplier-agnostic API that pushes label updates to any brand.",
-      "Building new customer checkout flows and hardening authentication flows on the associate-facing POS.",
+      "Own front-of-house device stack across all Wayfair physical retail brands (AllModern, Birch Lane, Joss & Main, Perigold): e-labels, mobile, and customer/associate-facing POS.",
+      "Building a supplier-agnostic e-label API unifying 4 suppliers behind one interface, powering new outlet launches.",
+      "Shipped POS checkout flows: in-store scan-to-basket customer switching and live associate-entry customer sync.",
     ],
   },
   {
