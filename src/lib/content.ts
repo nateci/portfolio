@@ -92,7 +92,7 @@ export const experience: Experience[] = [
   {
     company: "Wayfair",
     role: "Software Engineering Co-op",
-    period: "Jul 2026 - Dec 2026",
+    period: "Jul 2026 - present",
     location: "Boston, MA",
     current: true,
     points: [
@@ -111,21 +111,21 @@ export const experience: Experience[] = [
       "Integrated UpToDate Expert AI into CME accrual/redemption microservices, expanding GenAI clinical decision support to 250K+ clinicians.",
       "Built a Java Spring microservice for CME credit issuance inside Expert AI's clinician-facing workflow.",
       "Overhauled Relay JMS broker serialization with json-io across 20+ microservices, eliminating timeouts at scale.",
-      "Strengthened Expert AI search and filtering logic, improving clinical query performance and relevance.",
-      "Implemented OIDC/IdP authentication via Azure for new and existing consumers, securing identity access.",
+      "Optimized Expert AI search and filtering across 20+ microservices, improving clinical query relevance at scale.",
+      "Implemented OIDC/IdP authentication via Azure across 20 enterprise health systems, securing 10K+ clinicians.",
     ],
   },
   {
     company: "SculptAI",
     role: "Software Architect",
-    period: "Jan 2025 - present",
+    period: "Jan 2025 - Aug 2026",
     location: "New York, NY",
-    current: true,
     points: [
       "Led an engineering-org restructure at a $1M-funded startup, partitioning teams into DevOps, product dev, and agentic-workflow squads.",
       "Architected a Flask backend with a RAG pipeline for personalized workout recommendations on Amazon Bedrock Knowledge Bases.",
       "Evolved the RAG stack from LangChain → Vespa → zero-ops Bedrock KB, improving retrieval quality while cutting operational overhead.",
       "Maintained 99.99% uptime for 2K+ users via AWS WAF, Datadog, and GitLab / Kubernetes / Terraform.",
+      "Continuing as technical advisor on architecture and agentic-workflow direction.",
     ],
   },
   {
@@ -136,7 +136,6 @@ export const experience: Experience[] = [
     points: [
       "Built RESTful APIs and data pipelines with Azure Data Factory, improving product efficiency 40%.",
       "Implemented CI/CD with Azure DevOps and Kubernetes, enabling automated deployment and rollback.",
-      "Integrated PyTorch models with the AWS Neuron SDK for ML inference supporting 3M+ consumers globally.",
     ],
   },
   {
@@ -162,7 +161,7 @@ export const skills: { group: string; items: string[] }[] = [
   },
   {
     group: "Frameworks & Data",
-    items: ["React", "Next.js", "Node.js", "Express", "PyTorch", "TensorFlow", "PostgreSQL", "Pandas"],
+    items: ["React", "Next.js", "Node.js", "Express", "GraphQL", "PyTorch", "TensorFlow", "PostgreSQL", "Pandas"],
   },
   {
     group: "AI / Agentic Tooling",
