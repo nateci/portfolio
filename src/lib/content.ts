@@ -106,7 +106,6 @@ export const experience: Experience[] = [
     role: "Software Engineer",
     period: "Jul 2025 - Jun 2026",
     location: "Boston, MA",
-    current: true,
     points: [
       "Integrated UpToDate Expert AI into CME accrual/redemption microservices, expanding GenAI clinical decision support to 250K+ clinicians.",
       "Built a Java Spring microservice for CME credit issuance inside Expert AI's clinician-facing workflow.",
@@ -120,6 +119,7 @@ export const experience: Experience[] = [
     role: "Software Architect",
     period: "Jan 2025 - Aug 2026",
     location: "New York, NY",
+    current: true,
     points: [
       "Led an engineering-org restructure at a $1M-funded startup, partitioning teams into DevOps, product dev, and agentic-workflow squads.",
       "Architected a Flask backend with a RAG pipeline for personalized workout recommendations on Amazon Bedrock Knowledge Bases.",
