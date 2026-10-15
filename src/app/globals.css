@@ -55,6 +55,11 @@ button,
   border-radius: 6px;
 }
 
+/* headings that receive focus programmatically on view change: no ring */
+:where(h1, h2)[tabindex="-1"]:focus {
+  outline: none;
+}
+
 /* mouse users don't see the ring; keyboard users do */
 :focus:not(:focus-visible) {
   outline: none;
@@ -90,6 +95,14 @@ body {
   );
 }
 
+/* 2D hero field is a fallback for when the WebGL world can't start ------- */
+.scene-fallback {
+  display: none;
+}
+:root[data-scene="off"] .scene-fallback {
+  display: block;
+}
+
 /* monospace eyebrow label ----------------------------------------------- */
 .eyebrow {
   font-family: var(--font-mono);
@@ -110,6 +123,29 @@ body {
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.02) inset,
     0 24px 60px -24px rgba(0, 0, 0, 0.8);
+}
+
+/* frosted backdrop for copy that sits directly on the 3D world ----------- */
+.reading-panel {
+  background: rgba(8, 9, 11, 0.72);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+}
+
+/* "Start the tour" button: a slow glow pulse that says "click me" ------- */
+.tour-cta {
+  animation: tour-pulse 2.4s ease-in-out infinite;
+}
+@keyframes tour-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(53, 214, 195, 0.45), 0 10px 30px -10px rgba(53, 214, 195, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(53, 214, 195, 0), 0 10px 40px -8px rgba(53, 214, 195, 0.7);
+  }
 }
 
 /* text gradient ---------------------------------------------------------- */

@@ -1,22 +1,13 @@
-import { Nav } from "@/components/Nav";
-import { Hero } from "@/components/Hero";
-import { Work } from "@/components/Work";
-import { Experience } from "@/components/Experience";
-import { Stack } from "@/components/Stack";
-import { Contact, Footer } from "@/components/Contact";
+import { SceneCanvas } from "@/components/SceneCanvas";
+import { AppShell } from "@/components/app/AppShell";
 
+// The navigable 3D site: pick a project, role, or section and the camera flies
+// there. The full scrolling page is at /classic.
 export default function Home() {
   return (
     <>
-      <Nav />
-      <main className="flex-1">
-        <Hero />
-        <Work />
-        <Experience />
-        <Stack />
-        <Contact />
-      </main>
-      <Footer />
+      <SceneCanvas mode="nav" />
+      <AppShell />
     </>
   );
 }
